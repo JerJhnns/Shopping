@@ -17,6 +17,7 @@ namespace Shopping
                 String path = @"C:\Users\Jere\source\repos\Shopping\Shoppinglist.txt";
                 Console.WriteLine("Anna tuote:  ");
                 string tuote = Console.ReadLine();
+                Console.WriteLine("\n");
                 File.AppendAllText(path, tuote + Environment.NewLine);
                 String line;
 
@@ -40,12 +41,10 @@ namespace Shopping
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine("Exception: " + e.Message);
+                    
+                   
                 }
-                finally
-                {
-                    Console.WriteLine("Executing finally block.");
-                }
+                
             }
         }
     }
